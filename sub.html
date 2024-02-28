@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Wallows</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"><!--stylesheet-->
+        <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet"><!--font link for title-->
+        <!-- Adding Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body class="img3">
+    <div class ="container">
+        <header>
+            <h1 class="anta-regular center">The Wallows</h1>
+        </header>
+        <p class="center">Enter your email to subscribe for more details on The Wallows</p>
+        <form class="center" onsubmit="submitForm(); return false;">
+            <!-- Input button for emails -->
+            <input type="email" id="email" name="email"  class="btn btn-light" placeholder="Enter your email">
+            <button type="submit"  class="btn btn-light">Submit</button>
+            <script>
+                // JavaScript function to handle form submission
+                function submitForm() {
+                    // Get the value of the email input field
+                    var emailValue = document.getElementById("email").value;
+        
+                    // Perform any validation or processing here
+                    // For example, you can check if the email is valid
+        
+                    // Display the email value (for demonstration purposes)
+                    alert("Email submitted: " + emailValue);
+                }
+            </script>
+        </form>
+    </div>
+    </body>
+</html>
